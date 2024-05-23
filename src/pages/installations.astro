@@ -1,0 +1,27 @@
+---
+import Layaouts from "../layaouts/Layaouts.astro";
+import installations from "../config/installations/installations.json";
+---
+
+<div class="container mx-auto p-8">
+  <div class="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    {
+      installations.map((installation) => (
+        <div class="w-full mt-10 bg-white shadow-xl shadow-stone-400 rounded-lg overflow-hidden">
+          <img
+            src={installation.imagen}
+            alt="Descripción de la imagen"
+            class="w-full h-56 object-contain"
+          />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-gray-800 text-center">
+              {installation.titulo}
+            </h2>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+
