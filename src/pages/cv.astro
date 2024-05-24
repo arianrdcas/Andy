@@ -1,7 +1,19 @@
 ---
 import Layaouts from "../layaouts/Layaouts.astro";
+import CV from "../components/landing/cv.astro";
 ---
 
 <Layaouts>
-  <h1 class="">CV</h1>
+  <div class="flex justify-center mx-8 mt-16">
+    <img src="/images/Andy.jpg" />
+  </div>
+  <div class="text-start mx-16">
+    <article class="mt-2 lg:ml-44">
+      <p class="text-2xl text-slate-400">
+        andy <span class="text-slate-950">mendoza</span>
+      </p>
+      <p><span class="text-gray-400">La Habana, Cuba, 1997</span></p>
+    </article>
+  </div>
+  <CV/>
 </Layaouts>
