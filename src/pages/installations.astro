@@ -1,31 +1,8 @@
 ---
 import Layaouts from "../layaouts/Layaouts.astro";
-import installations from "../config/installations/installations.json";
+import Installations_Component from "../components/Installations/installations.astro";
 ---
 
 <Layaouts title="Andy | Intallations">
-  <div class="container mx-auto p-8">
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-    {
-      installations.map((installation) => (
-        <a 
-          href={`/gallery/${installation.id}`} 
-          class="w-full mt-10 bg-white shadow-xl shadow-stone-400 rounded-lg overflow-hidden cursor-pointer no-underline"
-        >
-          <img
-            src={installation.imagen}
-            alt="Descripción de la imagen"
-            class="w-full h-56 object-contain pt-8"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-gray-800 text-center">
-              {installation.titulo}
-            </h2>
-          </div>
-        </a>
-      ))
-    }
-  </div>
-</div>
-
+  <Installations_Component />
 </Layaouts>

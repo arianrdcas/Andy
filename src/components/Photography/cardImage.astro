@@ -1,0 +1,19 @@
+---
+import nube_sucia from "../../config/installations/nube_sucia.json";
+---
+
+<div
+  class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-10 justify-center"
+>
+  {
+    nube_sucia.map((item) => (
+      <div class="w-full mt-10 overflow-hidden">
+        <img
+          src={item.imagen}
+          alt="Descripción de la imagen"
+          class="w-full object-contain"
+        />
+      </div>
+    ))
+  }
+</div>
