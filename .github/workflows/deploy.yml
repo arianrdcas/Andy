@@ -1,14 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -16,7 +12,29 @@ permissions:
   actions: read
 
 jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List artifacts
+        id: list-artifacts
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/${{ github.repository }}/actions/artifacts > artifacts.json
+          cat artifacts.json
+          
+      - name: Delete old artifacts
+        run: |
+          artifacts=$(jq -r '.artifacts[] | select(.name == "github-pages") | "\(.id)"' artifacts.json)
+          for artifact_id in $artifacts; do
+            echo "Deleting artifact with ID: $artifact_id"
+            curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                 -H "Accept: application/vnd.github.v3+json" \
+                 https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$artifact_id
+          done
+
   build:
+    needs: cleanup
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
