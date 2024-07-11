@@ -1,67 +1,67 @@
 [
   {
     "id":"1",
-    "imagen": "/images/Installations/Pendon/pendom-2.jpg",
+    "imagen": "/Andy/images/Installations/Pendon/pendom-2.jpg",
     "titulo": "Pendon"
   },
   {
     "id":"2",
-    "imagen": "/images/Installations/Boomerang/9.jpg",
+    "imagen": "/Andy/images/Installations/Boomerang/9.jpg",
     "titulo": "Boomerang"
   },
   {
     "id":"3",
-    "imagen": "/images/Installations/Piedra_movediza/2.jpg",
+    "imagen": "/Andy/images/Installations/Piedra_movediza/2.jpg",
     "titulo": "Piedra movediza"
   },
   {
     "id":"4",
-    "imagen": "/images/Installations/La_nona_ora/1.jpg",
+    "imagen": "/Andy/images/Installations/La_nona_ora/1.jpg",
     "titulo": "La nona ora"
   },
   {
     "id":"5",
-    "imagen": "/images/Installations/La_ultima_gavilla/3.jpg",
+    "imagen": "/Andy/images/Installations/La_ultima_gavilla/3.jpg",
     "titulo": "Ultima gavilla"
   },
   {
     "id":"6",
-    "imagen": "/images/Installations/Procura_ser_feliz/1.jpg",
+    "imagen": "/Andy/images/Installations/Procura_ser_feliz/1.jpg",
     "titulo": "Procura ser feliz"
   },
   {
     "id":"7",
-    "imagen": "/images/Installations/Machete/1.jpg",
+    "imagen": "/Andy/images/Installations/Machete/1.jpg",
     "titulo": "Machete"
   },
   {
     "id":"8",
-    "imagen": "/images/Installations/Laureola/1.jpg",
+    "imagen": "/Andy/images/Installations/Laureola/1.jpg",
     "titulo": "Laureola"
   },
   {
     "id":"9",
-    "imagen": "/images/Installations/Dando_de_comer_a_los_caracoles/1.jpg",
+    "imagen": "/Andy/images/Installations/Dando_de_comer_a_los_caracoles/1.jpg",
     "titulo": "Dando de comer a los caracoles"
   },
   {
     "id":"10",
-    "imagen": "/images/Installations/Primer_discurso/1.jpg",
+    "imagen": "/Andy/images/Installations/Primer_discurso/1.jpg",
     "titulo": "Primer discurso"
   },
   {
     "id":"11",
-    "imagen": "/images/Installations/S_T/3.jpg",
+    "imagen": "/Andy/images/Installations/S_T/3.jpg",
     "titulo": "S/T"
   },
   {
     "id":"12",
-    "imagen": "/images/Installations/H_H_Holmes/1.jpg",
+    "imagen": "/Andy/images/Installations/H_H_Holmes/1.jpg",
     "titulo": "H.H.Holmes"
   },
   {
     "id":"13",
-    "imagen": "/images/Installations/Enamorada_del_muro/5.jpg",
+    "imagen": "/Andy/images/Installations/Enamorada_del_muro/5.jpg",
     "titulo": "Enamorada del muro"
   }
 ]
