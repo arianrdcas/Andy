@@ -1,8 +1,8 @@
-// toggleMenu.ts
+// toggleMenu.js
 
 // Selecciona el botón y el menú usando querySelector y añade tipos explícitos
-const boton = document.querySelector<HTMLButtonElement>("#boton");
-const menu = document.querySelector<HTMLElement>("#menu");
+const boton = document.querySelector("#boton");
+const menu = document.querySelector("#menu");
 
 // Verifica que los elementos no sean nulos antes de agregar el event listener
 if (boton && menu) {
@@ -13,4 +13,3 @@ if (boton && menu) {
 } else {
   console.error("El botón o el menú no se encontraron en el DOM.");
 }
-export {};
