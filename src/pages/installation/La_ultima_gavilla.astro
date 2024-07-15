@@ -1,0 +1,41 @@
+---
+import "bootstrap/dist/css/bootstrap.css";
+import la_ultima_gavilla from "./La ultima gavilla/la_ultima_gavilla.json";
+import Layaouts from "../../layaouts/Layaouts.astro";
+---
+
+<Layaouts title="Andy | Intallations">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide max-w-5xl p-8 mx-auto"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner object-cover">
+      {
+        la_ultima_gavilla.map((imagenes, index) => (
+          <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
+            <img src={imagenes.imagen} class="d-block w-100" alt="..." />
+          </div>
+        ))
+      }
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</Layaouts>
