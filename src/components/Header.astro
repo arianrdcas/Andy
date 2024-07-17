@@ -12,7 +12,7 @@
 
     <div
       id="menu"
-      class="hidden flex-grow sm:justify-self md:flex md:items-center md:justify-end md:w-auto lg:flex lg:items-center lg:w-auto"
+      class="hidden sm:justify-self md:flex md:items-center md:justify-end md:w-auto lg:flex lg:items-center lg:w-auto"
     >
       <div
         class="text-lg font-semibold sm:gap-2 sm:flex sm:text-sm sm:justify-center md:flex md:justify-center md:self-center md:space-x-5 md:text-base lg:flex-grow lg:justify-end lg:mr-10 lg:text-lg"
@@ -67,14 +67,34 @@
         class="flex items-center px-3 py-2 border-1 rounded text-teal-700 border-slate-700"
       >
         <svg
+          id="hamburger-icon"
           class="fill-current h-3 w-3"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
-          ><title>Menu</title><path
-            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
         >
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        <svg
+          id="close-icon"
+          class="w-4 h-4 text-teal-700 dark:text-white hidden"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <title>Close</title>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18 17.94 6M18 18 6.06 6"></path>
+        </svg>
       </button>
     </div>
-    <script type="module" src="/Andy/toggleMenu.js" is:inline></script>
+    <script type="module" src="../../public/toggleMenu.js" is:inline></script>
   </nav>
 </header>
