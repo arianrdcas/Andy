@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@midudev/tailwind-animations": "^0.0.7",
     "@popperjs/core": "^2.11.8",
     "@types/bootstrap": "^5.2.10",
     "astro": "^4.8.6",
