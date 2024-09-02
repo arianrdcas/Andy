@@ -1,5 +1,7 @@
 <main class="container mx-auto px-4">
-  <div class="p-6 flex justify-center mt-16 max-w-3xl mx-auto">
+  <div
+    class="p-6 flex justify-center mt-16 max-w-3xl mx-auto mask-image gradient-mask"
+  >
     <img src="/Andy/images/Otras_imagenes/Andy.jpg" />
   </div>
   <article class="p-6 text-start mt-2 max-w-3xl mx-auto">
@@ -187,6 +189,11 @@
 
 <style>
   img {
-    mask-image: linear-gradient(white 60%, transparent);
+    mask-image: linear-gradient(to bottom, transparent 0%, white 25%),
+      linear-gradient(to top, transparent 0%, white 25%),
+      linear-gradient(to right, transparent 0%, white 25%),
+      linear-gradient(to left, transparent 0%, white 25%);
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
   }
 </style>
