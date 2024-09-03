@@ -1,6 +1,4 @@
-// toggleMenu.js
-
-document.addEventListener("DOMContentLoaded", () => {
+function initMenuToggle() {
   // Selecciona el botón y el menú usando querySelector y añade tipos explícitos
   const boton = document.querySelector("#boton");
   const menu = document.querySelector("#menu");
@@ -22,4 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "El botón, el menú o los íconos no se encontraron en el DOM."
     );
   }
-});
+}
+
+// Inicializa el menú cuando el contenido esté cargado
+document.addEventListener("DOMContentLoaded", initMenuToggle);
+
+// Vuelve a inicializar el menú después de una navegación con ViewTransition
+document.addEventListener("astro:after-swap", initMenuToggle);

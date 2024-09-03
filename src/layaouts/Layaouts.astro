@@ -29,7 +29,6 @@ const { title } = Astro.props;
     <Header />
     <slot />
     <Footer />
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       is:inline
@@ -40,5 +39,6 @@ const { title } = Astro.props;
       is:inline
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"></script>
+    <script type="module" is:inline src="../../public/toggleMenu.js"></script>
   </body>
 </html>
