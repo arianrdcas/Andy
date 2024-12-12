@@ -9,8 +9,9 @@ function initMenuToggle() {
 
   // Verifica que los elementos no sean nulos antes de agregar el event listener
   if (boton && menu && hamburgerIcon && closeIcon) {
+    console.log("Elementos encontrados, inicializando menú...");
     boton.addEventListener("click", () => {
-      console.log("click");
+      console.log("Botón clicado");
       menu.classList.toggle("hidden");
       hamburgerIcon.classList.toggle("hidden");
       closeIcon.classList.toggle("hidden");
@@ -26,6 +27,4 @@ function initMenuToggle() {
 document.addEventListener("DOMContentLoaded", initMenuToggle);
 
 // Vuelve a inicializar el menú después de una navegación con ViewTransition
-document.addEventListener("astro:after-swap", () => {
-  initializeMenu();
-});
+document.addEventListener("astro:after-swap", initMenuToggle);
