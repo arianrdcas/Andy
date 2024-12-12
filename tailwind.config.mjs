@@ -9,6 +9,9 @@ export default {
         "ultra-wide": ".25em", // Un espaciado extremadamente amplio
         "mega-wide": ".8em",
       },
+      gridTemplateRows: {
+        16: "repeat(16, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [animations],
