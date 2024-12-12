@@ -26,4 +26,6 @@ function initMenuToggle() {
 document.addEventListener("DOMContentLoaded", initMenuToggle);
 
 // Vuelve a inicializar el menú después de una navegación con ViewTransition
-document.addEventListener("astro:after-swap", initMenuToggle);
+document.addEventListener("astro:after-swap", () => {
+  initializeMenu();
+});
